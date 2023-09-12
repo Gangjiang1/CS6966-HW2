@@ -1,21 +1,3 @@
-prompts = [
-    [
-        "User: What is in this image?",
-        "https://upload.wikimedia.org/wikipedia/commons/8/86/Id%C3%A9fix.JPG",
-        "<end_of_utterance>",
-
-        "\nAssistant: This picture depicts Idefix, the dog of Obelix in Asterix and Obelix. Idefix is running on the ground.<end_of_utterance>",
-
-        "\nUser:",
-        "https://static.wikia.nocookie.net/asterix/images/2/25/R22b.gif/revision/latest?cb=20110815073052",
-        "And who is that?<end_of_utterance>",
-
-        "\nAssistant:",
-    ],
-]
-
-
-!pip install torch
 import torch
 import transformers
 from transformers import IdeficsForVisionText2Text, AutoProcessor
